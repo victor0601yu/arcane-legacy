@@ -1,0 +1,16 @@
+{
+  "name": "arcane-legacy",
+  "version": "1.0.0",
+  "description": "Medieval fantasy landing page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcane Legacy | 秘法傳說 - 前端作品展示</title>
+  <meta name="description" content="Arcane Legacy 是一個以中世紀奇幻為主題的單頁式作品集展示，呈現精緻的 3D 互動與視差滾動技術。" />
+  
+  <!-- Google Fonts: Playfair Display for headings, Inter for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/src/css/main.css">
+  
+
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <nav class="navbar" id="navbar" aria-label="主導覽列">
+    <div class="navbar-container">
+      <div class="navbar-logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Arcane Legacy</div>
+      <ul class="navbar-links">
+        <li><a href="#about">深淵傳說</a></li>
+        <li><a href="#magic-core">遠古遺物</a></li>
+        <li><a href="#features">遊戲特色</a></li>
+      </ul>
+      <a href="#footer" class="navbar-cta" aria-label="立即跳轉至預約區塊">立即預約</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Arcane Legacy</h1>
+      <p class="hero-subtitle">一段史詩般的浩瀚旅程，即將在深邃的魔法遺跡中展開</p>
+      <button class="cta-button" id="start-btn" aria-label="開始探索秘法傳說">進入冒險</button>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container fade-in-up">
+      <h2 class="section-title">魔法的深淵與奧秘</h2>
+      <p class="section-text">
+        傳說在群星殞落的古老之城「艾瑟加」，埋藏著能撼動世間法則的遠古魔法。
+        跟隨命運的指引，探索遺跡、解開虛空符文的秘密，這段史詩旅途將由你親自譜寫。
+      </p>
+    </div>
+  </section>
+
+  <!-- Interactive Dynamic Section: Artifact Gallery -->
+  <section class="magic-core-section section" id="magic-core" aria-labelledby="gallery-title">
+    <div class="container fade-in-up">
+      <h2 class="section-title" id="gallery-title">遠古遺物陳列館</h2>
+      <p class="section-text" id="artifact-desc" style="margin-bottom: 3rem;" aria-live="polite">
+        【虛空核心】 - 將游標進入引力範圍，感受純粹能量的劇烈波動。
+      </p>
+      
+      <div class="artifact-gallery">
+        <button class="gallery-btn prev-btn" id="gallery-prev" aria-label="前一個遺物">◀</button>
+        
+        <div class="gallery-viewport">
+          <div class="gallery-track" id="gallery-track" role="region" aria-label="遺物展示區域">
+            
+            <!-- Artifact 1: Void Core -->
+            <div class="artifact-slide" aria-label="虛空核心">
+              <div class="core-container interactive-3d artifact-item">
+                <div class="core-orb"></div>
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+              </div>
+            </div>
+
+            <!-- Artifact 2: Astral Runes -->
+            <div class="artifact-slide" aria-label="星界法陣">
+              <div class="runes-container interactive-3d artifact-item">
+                <div class="rune-circle rune-outer"></div>
+                <div class="rune-circle rune-middle"></div>
+                <div class="rune-circle rune-inner"></div>
+                <div class="rune-center">✦</div>
+              </div>
+            </div>
+
+            <!-- Artifact 3: Shadow Crystal -->
+            <div class="artifact-slide" aria-label="幽影晶石">
+              <div class="crystal-container interactive-3d artifact-item">
+                <div class="crystal-glow"></div>
+                <div class="crystal-body"></div>
+                <div class="crystal-shard shard-1"></div>
+                <div class="crystal-shard shard-2"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="gallery-btn next-btn" id="gallery-next" aria-label="下一個遺物">▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features section" id="features">
+    <div class="container fade-in-up">
+      <h2 class="section-title">遊戲特色</h2>
+      <div class="features-grid" role="list">
+        
+        <article class="feature-card" role="listitem">
+          <div class="feature-icon" aria-hidden="true">✨</div>
+          <h3>壯闊史詩之旅</h3>
+          <p>體驗無與倫比的宏大劇情，伴隨著令人屏息的光影，經歷一段跨越世代的動人故事。</p>
+        </article>
+
+        <article class="feature-card" role="listitem">
+          <div class="feature-icon" aria-hidden="true">🔮</div>
+          <h3>神秘魔道工藝</h3>
+          <p>收集散落深淵的符文，鍛造專屬於你的禁忌魔法，每一次施法都是一場視覺盛宴。</p>
+        </article>
+
+        <article class="feature-card" role="listitem">
+          <div class="feature-icon" aria-hidden="true">🌌</div>
+          <h3>浩瀚無垠探索</h3>
+          <p>無限制的廣闊世界探索，從幽暗的幻影深淵到高聳入雲的星界法師塔，隨處皆是驚喜。</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container fade-in-up">
+      <h2 class="footer-logo">Arcane Legacy</h2>
+      <p>成為探尋真理的魔法繼承者。</p>
+      
+      <div class="footer-social">
+        <a href="https://github.com/placeholder" target="_blank" rel="noopener noreferrer">GITHUB</a>
+        <a href="https://portfolio-placeholder.com" target="_blank" rel="noopener noreferrer">PORTFOLIO</a>
+        <a href="mailto:contact@placeholder.com">CONTACT ME</a>
+      </div>
+
+      <button class="cta-button" onclick="alert('感謝您的關注！預約成功。')">立即與我聯繫</button>
+      
+      <p class="copyright">© 2026 前端作品集概念展示。技術：Vite, Pure CSS, Vanilla JS. <br /> 美術素材由 AI 生成，無商業用途。</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

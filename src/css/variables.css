@@ -1,0 +1,21 @@
+/* Custom Properties (Epic Fantasy / Arcane Vibe) */
+:root {
+  --color-bg: #090b14;
+  /* Deep midnight blue */
+  --color-primary: #8b5cf6;
+  /* Vibrant Purple */
+  --color-primary-glow: rgba(139, 92, 246, 0.6);
+  --color-secondary: #e0e7ff;
+  /* Ethereal ice blue/white */
+  --color-accent: #6d28d9;
+  /* Deep purple */
+  --color-text: #e5e5e5;
+  --color-text-muted: #94a3b8;
+  --color-card-bg: rgba(15, 23, 42, 0.7);
+  /* Dark slate blue */
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --transition: all 0.4s ease;
+}
