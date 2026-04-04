@@ -4,6 +4,8 @@
 
 **Arcane Legacy** 是一個以中世紀奇幻為主題的單頁式登陸頁面 (Landing Page) 概念展示作品。本專案專注於呈現史詩般、充滿沉浸感的視覺體驗，以及細膩的前端互動效果。
 
+## 🎮 [Live Demo 立即預覽](https://arcane-legacy-2ouqhwc6y-victor0601yus-projects.vercel.app)
+
 ## ✨ 核心特色 (Features)
 
 *   **真・視差滾動 (Parallax Scrolling):** 精心調校的 Hero Section，背景與前景標題隨著使用者捲動時產生不同速率的位移，營造出深邃的視覺層次感。
